@@ -3,11 +3,60 @@
 <title>Alvarado</title>
 </head>
 <body><center>
-National Dex: <input type="number">
+National Dex: <input type="number" min="1">
 <br><input type="radio">
 <br><br>Pokemon Name: <input type="text">
 <br><br>Image: <input type="file">
-<br><br>Type 1: <input type="text"> Type 2: <input type="text">
+
+<br><br><label for="type1">Type 1: </label>
+<input list="type1list" id="type1" name="type1" />
+<datalist id="type1list">
+  <option value="Bug"></option>
+  <option value="Dark"></option>
+  <option value="Dragon"></option>
+  <option value="Electric"></option>
+  <option value="Fairy"></option>
+  <option value="Fighting"></option>
+  <option value="Fire"></option>
+  <option value="Flying"></option>
+  <option value="Ghost"></option>
+  <option value="Grass"></option>
+  <option value="Ground"></option>
+  <option value="Ice"></option>
+  <option value="Normal	"></option>
+  <option value="Poison"></option>
+  <option value="Psychic"></option>
+  <option value="Rock"></option>
+  <option value="Steel"></option>
+  <option value="Water"></option>
+  <option value="Stellar"></option>
+</datalist>
+
+<label for="type2">Type 2: </label>
+<input list="type2list" id="type2" name="type2" />
+<datalist id="type2list">
+  <option value="Bug"></option>
+  <option value="Dark"></option>
+  <option value="Dragon"></option>
+  <option value="Electric"></option>
+  <option value="Fairy"></option>
+  <option value="Fighting"></option>
+  <option value="Fire"></option>
+  <option value="Flying"></option>
+  <option value="Ghost"></option>
+  <option value="Grass"></option>
+  <option value="Ground"></option>
+  <option value="Ice"></option>
+  <option value="Normal	"></option>
+  <option value="Poison"></option>
+  <option value="Psychic"></option>
+  <option value="Rock"></option>
+  <option value="Steel"></option>
+  <option value="Water"></option>
+  <option value="Stellar"></option>
+</datalist>
+
+
 <br><br>Evolves from: <input type="text">
 Evolves to: <input type="text">
 <br><br>Nickname: <input type="text">
