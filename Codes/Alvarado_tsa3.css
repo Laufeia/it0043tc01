@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&family=Stardos+Stencil:wght@400;700&display=swap');
+
+body{background-image: url('https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64d14fedea4cd16a4eab0081_%20-%205.png');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+padding: 100px;
+text-align: center;
+color: black;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+}
+
+.content{
+    background: white;
+    padding:50px;
+    border-radius: 60px;
+    width:60%;
+}
+
+.logo{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+.heading{
+font-family: Stardos Stencil, sans-serif;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 4rem;
+}
+
+.subheading{
+font-family: Stardos Stencil, sans-serif;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 2rem;
+}
+
+.text{
+font-family: Stardos Stencil, sans-serif;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 20px;
+}
+
+.green{
+font-weight: bold;
+color: green;
+}
+
+.footer{
+    font-family: Stardos Stencil, sans-serif;
+    margin-top: 20px;
+    margin-left: 450px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    border-radius: 25px;
+    background-color: green;
+    color:white;
+}
