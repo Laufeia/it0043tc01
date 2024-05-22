@@ -1,0 +1,240 @@
+body{
+        background-image: url('https://i.redd.it/3t849ymhb9q71.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    flex: 0 0 calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin: 1rem auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.contents{
+    display:inline-block;
+    border-radius: 10px;
+    background-color: black;
+    padding: 8px;
+    height: auto;
+    box-shadow: 10px 10px 10px black;
+}
+
+.pokemon{
+    background-image: url(Pokeball1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.type{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.desc{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding:10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add{
+    background-color: #4682b4;
+    color:white;
+}
+
+.release{
+    background-color: #dc143c;
+    color: white;
+}
+
+
+
+
+
+
+
+.detailsbug{
+    background-color:#94BC4A;
+}
+
+.detailsdark{
+    background-color:#736C75;
+}
+
+.detailsdragon{
+    background-color:#6A7BAF;
+}
+
+.detailselectric{
+    background-color:#E5C531;
+}
+
+.detailsfairy{
+    background-color:#E397D1;
+}
+
+.detailsfighting{
+    background-color:#CB5F48;
+}
+
+.detailsfire{
+    background-color:#EA7A3C;
+}
+
+.detailsflying{
+    background-color:#7DA6DE;
+}
+
+.detailsghost{
+    background-color:#846AB6;
+}
+
+.detailsgrass{
+    background-color:#71C558;
+}
+
+.detailsground{
+    background-color:#CC9F4F;
+}
+
+.detailsice{
+    background-color:#70CBD4;
+}
+
+.detailsnormal{
+    background-color:#AAB09F;
+}
+
+.detailspoison{
+    background-color:#B468B7;
+}
+
+.detailspsychic{
+    background-color:#E5709B;
+}
+
+.detailsrock{
+    background-color:#B2A061;
+}
+
+.detailssteel{
+    background-color:#89A1B0;
+}
+
+.detailswater{
+    background-color:#539AE2;
+}
+
+.detailsstellar{
+    background-color:#44628D;
+}
+
+
+
+
+.typebug{
+    background-color:#94BC4A;
+}
+
+.typedark{
+    background-color:#736C75;
+}
+
+.typedragon{
+    background-color:#6A7BAF;
+}
+
+.typeelectric{
+    background-color:#E5C531;
+}
+
+.typefairy{
+    background-color:#E397D1;
+}
+
+.typefighting{
+    background-color:#CB5F48;
+}
+
+.typefire{
+    background-color:#EA7A3C;
+}
+
+.typeflying{
+    background-color:#7DA6DE;
+}
+
+.typeghost{
+    background-color:#846AB6;
+}
+
+.typegrass{
+    background-color:#71C558;
+}
+
+.typeground{
+    border-radius: 50px;
+    background-color:#CC9F4F;
+}
+
+.typeice{
+    background-color:#70CBD4;
+}
+
+.typenormal{
+    background-color:#AAB09F;
+}
+
+.typepoison{
+    background-color:#B468B7;
+}
+
+.typepsychic{
+    background-color:#E5709B;
+}
+
+.typerock{
+    background-color:#B2A061;
+}
+
+.typesteel{
+    background-color:#89A1B0;
+}
+
+.typewater{
+    background-color:#539AE2;
+}
+
+.typestellar{
+    background-color:#44628D;
+}
+
