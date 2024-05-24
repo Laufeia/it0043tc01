@@ -35,11 +35,13 @@ body{
 }
 
 .name{
+    color: white;
     font-size: 37px;
     font-weight: bold;
 }
 
 .type{
+    color: white;
     display: inline-block;
     font-size: 25px;
     font-weight: bold;
