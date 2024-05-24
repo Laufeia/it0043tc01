@@ -1,5 +1,5 @@
 body{
-        background-image: url('https://i.redd.it/3t849ymhb9q71.png');
+        background-image: url('Background.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -7,16 +7,14 @@ body{
 }
 
 .card{
-    position: relative;
     width: 300px;
     border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff;
-    flex: 0 0 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    margin: 1rem auto;
-    text-align: center;
+    display: inline-block;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 10rem;
     vertical-align: top;
 }
 
@@ -37,18 +35,18 @@ body{
 }
 
 .name{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    margin: 10px 0px;
 }
 
 .type{
+    display: inline-block;
+    font-size: 25px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 .desc{
-    font-size: 14px;
+    font-size: 18px;
     margin: 10px 0px;
 }
 
@@ -60,8 +58,9 @@ body{
 
 .buttons button{
     padding:10px 20px;
-    border:none;
-    border-radius: 5px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 14px;
 }
@@ -162,79 +161,172 @@ body{
 
 
 .typebug{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#94BC4A;
 }
 
 .typedark{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#736C75;
 }
 
 .typedragon{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#6A7BAF;
 }
 
 .typeelectric{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#E5C531;
 }
 
 .typefairy{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#E397D1;
 }
 
 .typefighting{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#CB5F48;
 }
 
 .typefire{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#EA7A3C;
 }
 
 .typeflying{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#7DA6DE;
 }
 
 .typeghost{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#846AB6;
 }
 
 .typegrass{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#71C558;
 }
 
 .typeground{
-    border-radius: 50px;
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#CC9F4F;
 }
 
 .typeice{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#70CBD4;
 }
 
 .typenormal{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#AAB09F;
 }
 
 .typepoison{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#B468B7;
 }
 
 .typepsychic{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#E5709B;
 }
 
 .typerock{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#B2A061;
 }
 
 .typesteel{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#89A1B0;
 }
 
 .typewater{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#539AE2;
 }
 
 .typestellar{
+    display: inline-block;
+    padding:10px 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 12px;
     background-color:#44628D;
 }
-
