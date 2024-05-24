@@ -7,10 +7,9 @@ body{
 }
 
 .card{
-    width: 300px;
+    max-width: 300px;
     border-radius: 15px;
     box-shadow: 0 4px 8px black;
-    box-sizing: border-box;
     display: inline-block;
     margin-left: 6rem;
     margin-right: 6rem;
