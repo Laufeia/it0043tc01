@@ -1,0 +1,177 @@
+body{
+    background-image: url(pokeballbg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.grid-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(gradient.jpg);
+}
+
+.pokemon-name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pokeball-icon,.pokemon-name{
+    display: none;
+    position: absolute;
+}
+
+.pokemon-name{
+    bottom: 10px;
+    font-size: ;
+    font-weight: bold;
+    color:brown;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pokeball-icon{
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+        .pokemon-name, .pokeball-icon{
+          display: inline;
+        }
+    .pokemon-name-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .pokemon-name{
+        display: block;
+      }
+
+    .pokeball-icon{
+        display: none;
+    }
+}
+
+
+
+
+
+
+.mew{
+    background-color: #f4c4b3;
+}
+
+
+.snorlax{
+    background-color: #009be8;
+
+}
+
+
+.eevee{
+
+    background-color: #d3964c;
+
+}
+
+.dratini{
+
+    background-color: #42b1e8;
+
+}
+
+.bulbasaur{
+
+    background-color: #80edac;
+
+}
+
+.squirtle{
+
+    background-color: #7fe5d8;
+
+}
+
+.charmander{
+
+    background-color: #f77819;
+}
+
+.pikachu{
+
+    background-color: #fff800;
+}
+
+.venonat{
+
+    background-color: #7c34c1;
+}
+
+.mankey{
+
+    background-color: #f4d3a2;
+}
+
+.pidgey{
+
+    background-color: #e29c37;
+}
+
+.psyduck{
+
+    background-color: #fff800;
+}
