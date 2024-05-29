@@ -81,36 +81,17 @@ body{
 
 @media (max-width: 600px) {
     .grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 
-    .grid-item {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .pokemon-name, .pokeball-icon {
-        display: block;
-    }
-
-    .grid-item img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .pokemon-name {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        width: auto;
-    }
-
-    .pokeball-icon {
-        width: 40px;
-        height: 40px;
+        .pokemon-name, .pokeball-icon{
+          display: inline;
+        }
+    .pokemon-name-container{
+        flex-direction: column;
     }
 }
+
 
 @media (max-width: 300px) {
     .grid {
