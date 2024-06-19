@@ -1,10 +1,12 @@
+Can you make it so that the image for momonga be smaller and on scale because the picture I have is bigger same with albedo and also can you make space to the main picture below the header and move the summary below it and make some space for momonga as well and also make a description placeholder for me to input and are you able to resize the images to fit each other or complement each other
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overlord Anime</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Alvarado_TSA6.css">
 </head>
 <body>
     <nav class="nav">
@@ -21,7 +23,7 @@
     </nav>
 
     <div class="header-image">
-        <img src="Overlord.jpg" alt="Overlord" class="header-img">
+        <img src="Overlord.png" alt="Overlord" class="header-img">
     </div>
 
     <div class="main-character">
@@ -37,7 +39,7 @@
         <h2>Main Characters</h2>
         <div class="features-section">
             <div class="featured-image">
-                <img src="Albedo.jpg" alt="Albedo" class="featured-img">
+                <img src="Albedo.jfif" alt="Albedo" class="featured-img">
             </div>
             <div class="grid">
                 <div class="grid-item"><img src="Shalltear.jpg" alt="Shalltear"></div>
@@ -50,9 +52,6 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Overlord Anime. All rights reserved.</p>
-    </footer>
 </body>
 </html>
 
@@ -202,8 +201,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Breakpoints */
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -212,7 +210,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
     }
@@ -224,4 +222,3 @@ footer {
         margin: 10px 0;
     }
 }
-
