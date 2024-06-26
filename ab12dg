@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="reset-flexbox">Reset Flexbox</button>
+        <input type="number" id="gap-size" placeholder="0" />
+        <button id="set-gap">Gap</button>
+
+        <div class="control-group">
+            <h2>Flex Direction</h2>
+            <button data-direction="row">Row</button>
+            <button data-direction="column">Column</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Justify Content</h2>
+            <button data-justify="flex-start">Start</button>
+            <button data-justify="center">Center</button>
+            <button data-justify="flex-end">End</button>
+            <button data-justify="space-between">Space Between</button>
+            <button data-justify="space-around">Space Around</button>
+            <button data-justify="space-evenly">Space Evenly</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Align Items</h2>
+            <button data-align="flex-start">Start</button>
+            <button data-align="center">Center</button>
+            <button data-align="flex-end">End</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Flex Grow</h2>
+            <button id="reset-grow">Reset</button>
+            <button id="grow-all">Grow All</button>
+            <input type="number" id="grow-b1" placeholder="0" />
+            <button data-grow="1">Grow B-1</button>
+            <input type="number" id="grow-b2" placeholder="0" />
+            <button data-grow="2">Grow B-2</button>
+            <input type="number" id="grow-b3" placeholder="0" />
+            <button data-grow="3">Grow B-3</button>
+        </div>
+    </div>
+    <div class="flex-container" id="flex-container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.controls {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.controls h2 {
+    margin-bottom: 20px;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group button,
+.control-group input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6a0dad;
+    color: #fff;
+}
+
+.control-group input[type="number"] {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #6a0dad;
+}
+
+.flex-container {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    border: 1px solid #000;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.box-1 { background-color: #1a1aff; }
+.box-2 { background-color: #a11a1a; }
+.box-3 { background-color: #6b8e23; }
+
+
+const flexContainer = document.getElementById('flex-container');
+
+document.getElementById('reset-flexbox').addEventListener('click', () => {
+    flexContainer.style.flexDirection = 'row';
+    flexContainer.style.justifyContent = 'flex-start';
+    flexContainer.style.alignItems = 'flex-start';
+    flexContainer.style.gap = '0px';
+
+    Array.from(flexContainer.children).forEach(box => {
+        box.style.flexGrow = '0';
+    });
+});
+
+document.getElementById('set-gap').addEventListener('click', () => {
+    const gapSize = document.getElementById('gap-size').value;
+    flexContainer.style.gap = `${gapSize}px`;
+});
+
+document.querySelectorAll('button[data-direction]').forEach(button => {
+    button.addEventListener('click', () => {
+        const direction = button.getAttribute('data-direction');
+        flexContainer.style.flexDirection = direction;
+    });
+});
+
+document.querySelectorAll('button[data-justify]').forEach(button => {
+    button.addEventListener('click', () => {
+        const justifyContent = button.getAttribute('data-justify');
+        flexContainer.style.justifyContent = justifyContent;
+    });
+});
+
+document.querySelectorAll('button[data-align]').forEach(button => {
+    button.addEventListener('click', () => {
+        const alignItems = button.getAttribute('data-align');
+        flexContainer.style.alignItems = alignItems;
+    });
+});
+
+document.getElementById('reset-grow').addEventListener('click', () => {
+    Array.from(flexContainer.children).forEach(box => {
+        box.style.flexGrow = '0';
+    });
+});
+
+document.getElementById('grow-all').addEventListener('click', () => {
+    Array.from(flexContainer.children).forEach(box => {
+        box.style.flexGrow = '1';
+    });
+});
+
+document.querySelectorAll('button[data-grow]').forEach(button => {
+    button.addEventListener('click', () => {
+        const boxNumber = button.getAttribute('data-grow');
+        const growValue = document.getElementById(`grow-b${boxNumber}`).value;
+        const box = document.querySelector(`.box-${boxNumber}`);
+        box.style.flexGrow = growValue;
+    });
+});
 
