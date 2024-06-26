@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <div class="control-group">
+            <button id="reset-flexbox">Reset Flexbox</button>
+        </div>
+        
+        <div class="control-group">
+            <input type="number" id="gap-size" placeholder="0" />
+            <button id="set-gap">Set Gap</button>
+        </div>
 
+        <div class="control-group">
+            <h2>Flex Direction</h2>
+            <button data-direction="row">Row</button>
+            <button data-direction="column">Column</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Justify Content</h2>
+            <button data-justify="flex-start">Start</button>
+            <button data-justify="center">Center</button>
+            <button data-justify="flex-end">End</button>
+            <button data-justify="space-between">Space Between</button>
+            <button data-justify="space-around">Space Around</button>
+            <button data-justify="space-evenly">Space Evenly</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Align Items</h2>
+            <button data-align="flex-start">Start</button>
+            <button data-align="center">Center</button>
+            <button data-align="flex-end">End</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Flex Grow</h2>
+            <button id="reset-grow">Reset</button>
+            <button id="grow-all">Grow All</button>
+            <input type="number" id="grow-b1" placeholder="0" />
+            <button data-grow="1">Grow B-1</button>
+            <input type="number" id="grow-b2" placeholder="0" />
+            <button data-grow="2">Grow B-2</button>
+            <input type="number" id="grow-b3" placeholder="0" />
+            <button data-grow="3">Grow B-3</button>
+        </div>
+    </div>
+    <div class="flex-container" id="flex-container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
