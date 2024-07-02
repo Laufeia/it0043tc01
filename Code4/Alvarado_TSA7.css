@@ -16,18 +16,21 @@ body {
 }
 
 .controls h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .controls {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .controls button,
 .controls input {
-    display: block;
-    width: 99%;
-    margin-bottom: 10px;
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px 0;
     padding: 10px;
     font-size: 16px;
     border: none;
@@ -35,13 +38,28 @@ body {
     cursor: pointer;
     background-color: red;
     color: #fff;
+    text-align: center;
 }
 
 .controls input[type="number"] {
     background-color: #fff;
     color: #000;
     border: 1px solid red;
-    width: 92%;
+    width: calc(50% - 10px);
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.grow-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
 }
 
 .flex-container {
@@ -53,6 +71,7 @@ body {
     display: flex;
     gap: 10px;
     border: 1px solid #000;
+    flex-direction: row;
 }
 
 .box {
