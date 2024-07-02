@@ -19,37 +19,51 @@
 
         <div class="controls">
             <h2>Flex Direction</h2>
-            <button data-direction="row">Row</button>
-            <button data-direction="column">Column</button>
+            <div class="button-group">
+                <button data-direction="row">Row</button>
+                <button data-direction="column">Column</button>
+            </div>
         </div>
 
         <div class="controls">
             <h2>Justify Content</h2>
-            <button data-justify="flex-start">Start</button>
-            <button data-justify="center">Center</button>
-            <button data-justify="flex-end">End</button>
-            <button data-justify="space-between">Space Between</button>
-            <button data-justify="space-around">Space Around</button>
-            <button data-justify="space-evenly">Space Evenly</button>
+            <div class="button-group">
+                <button data-justify="flex-start">Start</button>
+                <button data-justify="center">Center</button>
+                <button data-justify="flex-end">End</button>
+                <button data-justify="space-between">Space Between</button>
+                <button data-justify="space-around">Space Around</button>
+                <button data-justify="space-evenly">Space Evenly</button>
+            </div>
         </div>
 
         <div class="controls">
             <h2>Align Items</h2>
-            <button data-align="flex-start">Start</button>
-            <button data-align="center">Center</button>
-            <button data-align="flex-end">End</button>
+            <div class="button-group">
+                <button data-align="flex-start">Start</button>
+                <button data-align="center">Center</button>
+                <button data-align="flex-end">End</button>
+            </div>
         </div>
 
         <div class="controls">
             <h2>Flex Grow</h2>
-            <button id="reset-grow">Reset</button>
-            <button id="grow-all">Grow All</button>
-            <input type="number" id="grow-b1" placeholder="0" />
-            <button data-grow="1">Grow B-1</button>
-            <input type="number" id="grow-b2" placeholder="0" />
-            <button data-grow="2">Grow B-2</button>
-            <input type="number" id="grow-b3" placeholder="0" />
-            <button data-grow="3">Grow B-3</button>
+            <div class="button-group">
+                <button id="reset-grow">Reset</button>
+                <button id="grow-all">Grow All</button>
+            </div>
+            <div class="grow-controls">
+                <input type="number" id="grow-b1" placeholder="0" />
+                <button data-grow="1">Grow B-1</button>
+            </div>
+            <div class="grow-controls">
+                <input type="number" id="grow-b2" placeholder="0" />
+                <button data-grow="2">Grow B-2</button>
+            </div>
+            <div class="grow-controls">
+                <input type="number" id="grow-b3" placeholder="0" />
+                <button data-grow="3">Grow B-3</button>
+            </div>
         </div>
     </div>
     <div class="flex-container" id="flex-container">
