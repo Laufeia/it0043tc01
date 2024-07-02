@@ -13,7 +13,9 @@ document.getElementById('reset-flexbox').addEventListener('click', () => {
 
 document.getElementById('set-gap').addEventListener('click', () => {
     const gapSize = document.getElementById('gap-size').value;
-    flexContainer.style.gap = `${gapSize}px`;
+    if (gapSize >= 0) {
+        flexContainer.style.gap = `${gapSize}px`;
+    }
 });
 
 document.querySelectorAll('button[data-direction]').forEach(button => {
@@ -44,16 +46,23 @@ document.getElementById('reset-grow').addEventListener('click', () => {
 });
 
 document.getElementById('grow-all').addEventListener('click', () => {
-    Array.from(flexContainer.children).forEach(box => {
-        box.style.flexGrow = '1';
-    });
+    const growB1 = document.getElementById('grow-b1').value || 0;
+    const growB2 = document.getElementById('grow-b2').value || 0;
+    const growB3 = document.getElementById('grow-b3').value || 0;
+
+    const boxes = flexContainer.children;
+    boxes[0].style.flexGrow = growB1;
+    boxes[1].style.flexGrow = growB2;
+    boxes[2].style.flexGrow = growB3;
 });
 
 document.querySelectorAll('button[data-grow]').forEach(button => {
     button.addEventListener('click', () => {
         const boxNumber = button.getAttribute('data-grow');
         const growValue = document.getElementById(`grow-b${boxNumber}`).value;
-        const box = document.querySelector(`.box-${boxNumber}`);
-        box.style.flexGrow = growValue;
+        if (growValue >= 0) {
+            const box = document.querySelector(`.box-${boxNumber}`);
+            box.style.flexGrow = growValue;
+        }
     });
 });
