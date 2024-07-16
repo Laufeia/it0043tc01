@@ -11,6 +11,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    color: white;
 }
 
 .nav {
@@ -44,14 +45,6 @@ body{
     color: red;
 }
 
-.about-img{
-    width: 20%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
 .back {
     text-align: center;
     color: #fff;
@@ -59,11 +52,95 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.back h1 {
+.about-section{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about-img{
+    margin-left: 20px;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 75%;
+}
+
+.about-section h2{
     font-size: 3rem;
+}
+
+.home-section {
+    text-align: center; 
+    color: #fff;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-section h1 {
+    font-size: 4rem;
     margin-bottom: 10px;
 }
 
-.back p {
+.home-section p {
     font-size: 1.5rem;
+}
+
+
+.portfolio-section {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 60px 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-box {
+    flex: 1 1 calc(33% - 20px); 
+    max-width: calc(33% - 20px);
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.portfolio-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.portfolio-item a:hover {
+    color: #f00; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 4px; 
+    padding: 5px; 
+}
+
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px 20px;
+    text-align: center;
 }
