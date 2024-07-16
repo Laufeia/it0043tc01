@@ -1,81 +1,99 @@
 body{
-        background-image: url('Background.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        text-align: center;
+    background-image: url('Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
 }
 
 .card{
-    max-width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px black;
-    display: inline-block;
+max-width: 300px;
+border-radius: 15px;
+box-shadow: 0 4px 8px black;
+display: inline-block;
+margin: 35px;
+vertical-align: top;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.grid{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    vertical-align: top;
+    padding: 10px;
+    gap: 10px;
 }
 
 .contents{
-    display:inline-block;
-    border-radius: 10px;
-    background-color: black;
-    padding: 8px;
-    height: auto;
-    box-shadow: 10px 10px 10px black;
+display:inline-block;
+border-radius: 10px;
+background-color: black;
+padding: 8px;
+height: auto;
+box-shadow: 10px 10px 10px black;
 }
 
 .pokemon{
-    background-image: url('Pokeball1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+background-image: url('Pokeball1.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .name{
-    font-size: 37px;
-    font-weight: bold;
-    color: white;
+font-size: 37px;
+font-weight: bold;
+color: white;
 }
 
 .type{
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    font-size: 25px;
-    font-weight: bold;
+font-weight: bold;
+color: white;
+display: inline-block;
+font-size: 25px;
+font-weight: bold;
 }
- 
+
 .desc{
-    font-style: italic;
-    color: white;
-    font-size: 18px;
-    margin: 10px 0px;
+font-style: italic;
+color: white;
+font-size: 18px;
+margin: 10px 0px;
 }
 
 .buttons{
-    display:flex;
-    justify-content: space-around;
-    margin-top: 20px;
+display:flex;
+justify-content: space-around;
+margin-top: 20px;
 }
 
 .buttons button{
-    padding:8px 12px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-bottom: 10px;
+padding:8px 12px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+cursor: pointer;
+font-size: 14px;
+margin-bottom: 10px;
 }
 
 .add{
-    background-color: #4682b4;
-    color:white;
+background-color: #4682b4;
+color:white;
 }
 
 .release{
-    background-color: #dc143c;
-    color: white;
+background-color: #dc143c;
+color: white;
 }
 
 
@@ -85,270 +103,270 @@ body{
 
 
 .detailsbug{
-    background-color:#94BC4A;
+background-color:#94BC4A;
 }
 
 .detailsdark{
-    background-color:#736C75;
+background-color:#736C75;
 }
 
 .detailsdragon{
-    background-color:#6A7BAF;
+background-color:#6A7BAF;
 }
 
 .detailselectric{
-    background-color:#E5C531;
+background-color:#E5C531;
 }
 
 .detailsfairy{
-    background-color:#E397D1;
+background-color:#E397D1;
 }
 
 .detailsfighting{
-    background-color:#CB5F48;
+background-color:#CB5F48;
 }
 
 .detailsfire{
-    background-color:#EA7A3C;
+background-color:#EA7A3C;
 }
 
 .detailsflying{
-    background-color:#7DA6DE;
+background-color:#7DA6DE;
 }
 
 .detailsghost{
-    background-color:#846AB6;
+background-color:#846AB6;
 }
 
 .detailsgrass{
-    background-color:#71C558;
+background-color:#71C558;
 }
 
 .detailsground{
-    background-color:#CC9F4F;
+background-color:#CC9F4F;
 }
 
 .detailsice{
-    background-color:#70CBD4;
+background-color:#70CBD4;
 }
 
 .detailsnormal{
-    background-color:#AAB09F;
+background-color:#AAB09F;
 }
 
 .detailspoison{
-    background-color:#B468B7;
+background-color:#B468B7;
 }
 
 .detailspsychic{
-    background-color:#E5709B;
+background-color:#E5709B;
 }
 
 .detailsrock{
-    background-color:#B2A061;
+background-color:#B2A061;
 }
 
 .detailssteel{
-    background-color:#89A1B0;
+background-color:#89A1B0;
 }
 
 .detailswater{
-    background-color:#539AE2;
+background-color:#539AE2;
 }
 
 .detailsstellar{
-    background-color:#44628D;
+background-color:#44628D;
 }
 
 
 
 
 .typebug{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#94BC4A;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#94BC4A;
+color: white;
 }
 
 .typedark{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#736C75;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#736C75;
+color: white;
 }
 
 .typedragon{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#6A7BAF;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#6A7BAF;
+color: white;
 }
 
 .typeelectric{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#E5C531;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#E5C531;
+color: white;
 }
 
 .typefairy{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#E397D1;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#E397D1;
+color: white;
 }
 
 .typefighting{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#CB5F48;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#CB5F48;
+color: white;
 }
 
 .typefire{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#EA7A3C;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#EA7A3C;
+color: white;
 }
 
 .typeflying{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#7DA6DE;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#7DA6DE;
+color: white;
 }
 
 .typeghost{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#846AB6;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#846AB6;
+color: white;
 }
 
 .typegrass{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#71C558;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#71C558;
+color: white;
 }
 
 .typeground{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#CC9F4F;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#CC9F4F;
+color: white;
 }
 
 .typeice{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#70CBD4;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#70CBD4;
+color: white;
 }
 
 .typenormal{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#AAB09F;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#AAB09F;
+color: white;
 }
 
 .typepoison{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#B468B7;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#B468B7;
+color: white;
 }
 
 .typepsychic{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#E5709B;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#E5709B;
+color: white;
 }
 
 .typerock{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#B2A061;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#B2A061;
+color: white;
 }
 
 .typesteel{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#89A1B0;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#89A1B0;
+color: white;
 }
 
 .typewater{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#539AE2;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#539AE2;
+color: white;
 }
 
 .typestellar{
-    display: inline-block;
-    padding:10px 20px;
-    border: black;
-    border-style: solid;
-    border-radius: 12px;
-    background-color:#44628D;
-    color: white;
+display: inline-block;
+padding:10px 20px;
+border: black;
+border-style: solid;
+border-radius: 12px;
+background-color:#44628D;
+color: white;
 }
