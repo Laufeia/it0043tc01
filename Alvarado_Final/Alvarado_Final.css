@@ -60,8 +60,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 .about-img{
@@ -79,8 +80,15 @@ body{
     max-width: 75%;
 }
 
+.about-section h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .about-section h2{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .home-section {
@@ -121,8 +129,12 @@ body{
     text-align: center;
 }
 
+.portfolio-section h1{
+    font-size: 4rem;
+}
+
 .portfolio-box img {
-    width: 100%;
+    width: 20%;
     border-radius: 8px;
 }
 
